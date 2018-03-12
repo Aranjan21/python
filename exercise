@@ -1,0 +1,91 @@
+# this is the practice session
+# To input name and age
+
+import string
+name = raw_input("What is your name: ")
+age = int(raw_input("How old are you: "))
+year = str((2017 - age)+100)
+print(name + " will be 100 years old in the year " + year)
+
+
+print("\t******************SECOND CODE*************\t")
+num=int(input("Enter the number: "))
+if num%2 == 0:
+    if num%4 == 0:
+        print("Number is multiple of FOUR")
+    print("number entered is EVEN ")
+else:
+    print("Number entered is ODD ")
+
+print("\t******************THIRD CODE***************\t")
+
+a = [1,1,2,3,5,8,13,21,34,55,89]
+new_list = []
+for i in a:
+    if i < 5:
+        new_list.append(i)
+print(new_list)
+
+print("\t******************FOURTH CODE***************\t")
+#Create a program that asks the user for a number and then prints out a list of all the divisors of that number.
+num = int(raw_input("Enter the number: "))
+list = range(1, 100)
+new_list = []
+for i in list:
+    if num%i == 0:
+        new_list.append(i)
+print(new_list)
+
+print("\t******************FIFTH CODE***************\t")
+#write a program that returns a list that contains only the elements that are common between the lists
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+new_list = []
+for i in a:
+    if i in b:
+        new_list.append(i)
+
+print(new_list)
+
+print("\t******************SIXTH CODE***************\t")
+#print out whether this string is a palindrome or not
+import string
+wrd=raw_input("Please enter a word: ")
+wrd=str(wrd)
+rvs=wrd[::-1]
+print(rvs)
+if wrd == rvs:
+     print("This word is a palindrome")
+else:
+     print("This word is not a palindrome")
+
+
+print("\t******************SEVENTH CODE***************\t")
+
+a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+b = []
+for x in a:
+    if x%2 == 0:
+        print(x)
+
+
+
+print("\t******************NINTH CODE***************\t")
+
+import random
+a = random.randint(1, 9)
+guess = int(input("Guess any number between 1 and 9: "))
+print(a)
+if guess == a:
+    print("You guess exactly the right number")
+elif guess > a:
+    print("You guess too high number")
+else:
+    print("You guess too low number")
+
+print("\t******************TENTH CODE***************\t")
+import random
+a = random.sample((1, 30), 12)
+b = random.sample((1, 30), 16)
+result = [i for i in a if i in b]
+print(result)                                                                                                                                                      1,1           Top
